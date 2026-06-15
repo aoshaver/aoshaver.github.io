@@ -1,3 +1,44 @@
 title: Amanda O. Shaver
-description: Your professional website
-theme: minima
+tagline: Post-doctoral Fellow 
+description: C. elegans • Anthelmintic (anti-helminth) Resistance • Evolutionary Genetics • Quantitative Genetics
+url: "https://aoshaver.github.io"
+baseurl: "/amanda-shaver"  # leave blank for user site; set to "/<repo>" for project site
+
+markdown: kramdown
+permalink: pretty
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+# Site nav
+nav:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: Projects
+    url: /projects/
+  - title: Publications
+    url: /publications/
+  - title: CV
+    url: /cv/
+  - title: Contact
+    url: /contact/
